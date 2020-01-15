@@ -1,12 +1,12 @@
 package hi.action;
 
-public enum Intention {
+public enum Expression {
 
 	NO(0),
 	YES(1);
 	
 	//constructor
-	private Intention(final int message) {
+	private Expression(final int message) {
 		
 	}
 }

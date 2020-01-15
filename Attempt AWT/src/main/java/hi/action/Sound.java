@@ -7,7 +7,7 @@ import javax.sound.sampled.*;
 
 public class Sound {
 	
-	public void createSound(URL pResourceLocation) throws Exception {
+	public static void createSound(URL pResourceLocation) throws Exception {
 	    
 	    Clip clip = AudioSystem.getClip();
 	    AudioInputStream ais = AudioSystem.getAudioInputStream(pResourceLocation);

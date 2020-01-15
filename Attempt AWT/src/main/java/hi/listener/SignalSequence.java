@@ -1,21 +1,36 @@
 package hi.listener;
 
 import java.awt.Point;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Date;
 
+import hi.action.Intention;
+import hi.action.IntentionExpressionMapper;
+import hi.action.ExpressionSoundMapper;
+import hi.action.Sound;
 
-public class Signal_Sequence {
+
+public class SignalSequence {
 
 	private Date startPoint;
 	private Date endPoint;
 	private ArrayList<Point> sumOfSignals;
 	
-	public Signal_Sequence(ArrayList<Point> sumOfSignals) {
+	public static void callForMapping(SignalSequence pSignalSequence) throws MalformedURLException, Exception {
+		SequenceIntentionMapper sim = new SequenceIntentionMapper();
+		Intention I = sim.mapSequenceToIntention(pSignalSequence);
+		
+		ExpressionSoundMapper ism = new ExpressionSoundMapper();
+		
+		Sound.createSound(ism.mapRequestToSound(IntentionExpressionMapper.mapIntentionToExpression(I)));
+	}
+	
+	public SignalSequence(ArrayList<Point> sumOfSignals) {
 		this.sumOfSignals = sumOfSignals;
 	}
 	
-	public Signal_Sequence getInstance() {
+	public SignalSequence getInstance() {
 		return this;
 	}
 

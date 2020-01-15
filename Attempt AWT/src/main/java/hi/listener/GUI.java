@@ -18,7 +18,7 @@ public class GUI {
 
 	private void createProtagonists(JFrame pJframe) {
 		
-		Signal_General signal = new Signal_General();
+		Signal signal = new Signal();
 		
 		pJframe.addMouseListener(signal);
 		pJframe.addMouseMotionListener(signal);			
