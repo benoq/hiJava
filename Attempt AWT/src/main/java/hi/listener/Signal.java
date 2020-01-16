@@ -67,8 +67,7 @@ public class Signal implements MouseListener, MouseMotionListener{
 	}
 
 	public void mouseExited(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-		
+		// TODO Auto-generated method stub		
 	}
 
 
