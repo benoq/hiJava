@@ -1,4 +1,4 @@
-package hi.AwtInbound;
+package hi.receiveSignalFromAWT;
 
 import javax.swing.JFrame;
 
@@ -18,10 +18,10 @@ public class GUI {
 
 	private void createProtagonists(JFrame pJframe) {
 		
-		AwtSignalImpl awtSignalImpl = new AwtSignalImpl();
+		Signal_ImplFromAWT signal = new Signal_ImplFromAWT(); 
 		
-		pJframe.addMouseListener(awtSignalImpl);
-		pJframe.addMouseMotionListener(awtSignalImpl);			
+		pJframe.addMouseListener(signal);
+		pJframe.addMouseMotionListener(signal);			
 	}
 
 }

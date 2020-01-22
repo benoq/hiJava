@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>HI</groupId>
-  <artifactId>Listener</artifactId>
+  <artifactId>receiveSignalFromAWT</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Listener</name>
+  <name>receiveSignalFromAWT</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -28,5 +28,7 @@
     <artifactId>tinylog</artifactId>
     <version>1.3.6</version>
     </dependency>
+
   </dependencies>
+  
 </project>

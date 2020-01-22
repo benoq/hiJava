@@ -27,9 +27,7 @@ public class Sound {
 		    clip.start();
 		}
 		else if(pResourceLocation != null && doesURLpointToMP3){
-			Platform.startup(() ->			{
-			    // This block will be executed on JavaFX Thread
-			});
+
 			Media media = new Media(pResourceLocation.toURI().toString());
 			MediaPlayer mediaPlayer = new MediaPlayer(media);
 			mediaPlayer.play();

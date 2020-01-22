@@ -1,4 +1,4 @@
-package hi.AwtInbound;
+package hi.receiveSignalFromAWT;
 
 import java.awt.Point;
 import java.awt.event.MouseEvent;
@@ -7,7 +7,7 @@ import java.awt.event.MouseMotionListener;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 
-public class AwtSignalImpl implements MouseListener, MouseMotionListener{
+public class Signal_ImplFromAWT implements MouseListener, MouseMotionListener{
 	
 	private SignalSequence memberSignal;
 

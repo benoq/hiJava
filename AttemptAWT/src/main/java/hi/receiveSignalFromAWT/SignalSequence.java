@@ -1,4 +1,4 @@
-package hi.AwtInbound;
+package hi.receiveSignalFromAWT;
 
 import java.awt.Point;
 import java.net.MalformedURLException;
