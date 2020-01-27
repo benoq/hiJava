@@ -1,6 +1,6 @@
 package hi.receiveSignalFromAWT;
 
-import hi.receiveSignalFromAWT.GUI;
+import hi.gui.GUI;
 import javafx.application.Platform;
 
 public class App 

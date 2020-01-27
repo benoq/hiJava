@@ -11,10 +11,10 @@ public class ExpressionSoundMapper {
 		
 		switch(pExpression) {
 		case YES:
-			soundURL = new File(constants.pathForSoundFile_yes).toURI().toURL();
+			soundURL = new File(Constants.pathForSoundFile_yes).toURI().toURL();
 			break;
 		case UNDEFINED_EXPRESSION:
-			soundURL = new File(constants.pathForSoundFile_unbekannteGeste).toURI().toURL();
+			soundURL = new File(Constants.pathForSoundFile_unbekannteGeste).toURI().toURL();
 			break;
 		}
 		return soundURL;
