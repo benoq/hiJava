@@ -15,20 +15,20 @@ import javafx.scene.media.MediaPlayer;
 
 public class Sound {
 	
-	public static void createSound(URL pResourceLocation) throws Exception {
+	public static void createSound(URL pRessourceLocation) throws Exception {
 	   
-		boolean doesURLpointToWave = pResourceLocation.toString().contains(".wav");  //TODO if this is ever kept in that manner, do it right an check ending of string
-		boolean doesURLpointToMP3  = pResourceLocation.toString().contains(".mp3");
+		boolean doesURLpointToWave = pRessourceLocation.toString().contains(".wav");  //TODO if this is ever kept in that manner, do it right an check ending of string
+		boolean doesURLpointToMP3  = pRessourceLocation.toString().contains(".mp3");
 		
-		if(pResourceLocation != null && doesURLpointToWave) {
+		if(pRessourceLocation != null && doesURLpointToWave) {
 		    Clip clip = AudioSystem.getClip();
-		    AudioInputStream ais = AudioSystem.getAudioInputStream(pResourceLocation);
+		    AudioInputStream ais = AudioSystem.getAudioInputStream(pRessourceLocation);
 		    clip.open(ais);
 		    clip.start();
 		}
-		else if(pResourceLocation != null && doesURLpointToMP3){
+		else if(pRessourceLocation != null && doesURLpointToMP3){
 
-			Media media = new Media(pResourceLocation.toURI().toString());
+			Media media = new Media(pRessourceLocation.toURI().toString());
 			MediaPlayer mediaPlayer = new MediaPlayer(media);
 			mediaPlayer.play();
 		}

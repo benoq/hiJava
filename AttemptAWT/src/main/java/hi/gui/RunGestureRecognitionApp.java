@@ -1,11 +1,13 @@
-package hi.receiveSignalFromAWT;
+package hi.gui;
+
+import java.net.MalformedURLException;
 
 import hi.gui.GUI;
 import javafx.application.Platform;
 
-public class App 
+public class RunGestureRecognitionApp
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws MalformedURLException
     {
 		//enable javaFx elements by starting up the platform
     	try {
